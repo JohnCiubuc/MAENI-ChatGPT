@@ -21,7 +21,6 @@ class Ui(QtWidgets.QMainWindow):
         
         case_prompt = "The patient in question is presenting with shortness of breath on exertion and dyspnea with past medical history of HTN and DM. The student is asked what is going on and the student replies that they think there is CHF exacerbation."
         self.plainTextEdit_2.setPlainText(case_prompt)
-        print(self.plainTextEdit_2.toPlainText())
         self._openai.reset_messages_set_patient(case_prompt)
         self._openai.append_ai_question("What do you think is going on?")
         self._openai.append_student_response("I think there is CHF Exacerbation")

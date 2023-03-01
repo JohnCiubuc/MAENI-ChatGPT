@@ -3,7 +3,7 @@
 """
 Created on Wed Mar  1 14:05:04 2023
 
-@author: inathero
+@author: John Ciubuc
 """
 import openai
 class openai_basic:
@@ -30,16 +30,3 @@ class openai_basic:
         response_message = response.choices[0]["message"]["content"]
         self.append_ai_question(response_message)
         return response_message
-        
-
-
-#"The patient in question is presenting with extreme shortness of breath with past medical history of COPD. The student is asked what is going on and the student replies that they think there is CHF exacerbation. ?"
-        
-# openai.ChatCompletion.create(
-#   model="gpt-3.5-turbo",
-#   messages=[
-#         {"role": "educator", "content": "What do you think is going on?"},
-#         {"role": "assistant", "content": "I think there is CHF Exacerbation"},
-#         {"role": "educator", "content": "What evidence do you have that this patient has CHF Exacerbation?"}
-#     ]
-# )The patient in question is presenting with shortness of breath on exacerbation and dyspnea with past medical history of HTN and DM. The student is asked what is going on and the student replies that they think there is CHF exacerbation.
