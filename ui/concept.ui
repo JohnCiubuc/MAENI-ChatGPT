@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>544</width>
-    <height>393</height>
+    <width>730</width>
+    <height>469</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,18 +15,21 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="1" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QGroupBox" name="groupBox">
         <property name="title">
-         <string>Module</string>
+         <string>  GPT Module</string>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
           <widget class="QLabel" name="label">
            <property name="text">
             <string>What evidence do you have that this patient has Congestive Heart Failure Exacerbation?</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
            </property>
           </widget>
          </item>
@@ -45,6 +48,37 @@
       </item>
      </layout>
     </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>  Case Demo</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0" colspan="2">
+        <widget class="QPlainTextEdit" name="plainTextEdit_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>85</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>85</height>
+          </size>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string>The patient in question is presenting with shortness of breath on exacerbation and dyspnea with past medical history of HTN and DM. The student is asked what is going on and the student replies that they think there is CHF exacerbation.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -52,8 +86,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>544</width>
-     <height>22</height>
+     <width>730</width>
+     <height>27</height>
     </rect>
    </property>
   </widget>
